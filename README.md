@@ -46,11 +46,11 @@ src/test/java
 
 Требования: **JDK 17**, установленный **Gradle** (8.x/9.x), доступ в интернет (облачный Selenoid).
 
-> Gradle wrapper в репозиторий не коммитится. Либо используйте системный Gradle, либо сгенерируйте обёртку один раз: `gradle wrapper`.
+> Gradle wrapper в репозиторий не коммитится — используйте системный Gradle (установленный локально).
 
 ```bash
-./gradlew test          # прогон тестов → build/allure-results
-./gradlew allureReport  # отчёт   → build/reports/allure-report/allureReport/index.html
+gradle test          # прогон тестов → build/allure-results
+gradle allureReport  # отчёт   → build/reports/allure-report/allureReport/index.html
 ```
 
 Откройте `build/reports/allure-report/allureReport/index.html` — там три теста с тремя разными деревьями шагов (у плагина `io.qameta.allure` 4.x отчёт кладётся в подкаталог с именем задачи).

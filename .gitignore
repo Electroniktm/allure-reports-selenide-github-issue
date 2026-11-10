@@ -16,3 +16,7 @@ Thumbs.db
 
 # Logs
 *.log
+# Gradle wrapper (not committed)
+gradlew
+gradlew.bat
+gradle/wrapper/

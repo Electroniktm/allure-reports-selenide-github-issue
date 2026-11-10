@@ -26,6 +26,10 @@
 
 > Ключевое отличие: в lambda‑шагах в имя подставляются фактические значения (*«…репозиторий Electroniktm/…»*, *«…Issue с именем Test Issue»*), а имена `@Step` статичны.
 
+![Схема: три способа описать шаги одного теста](docs/allure-report.png)
+
+> *Рис.* Дерево шагов каждого варианта в отчёте Allure — оранжевым выделены значения, подставленные в имя шага, серым — статичные имена.
+
 ## Структура проекта
 
 ```
@@ -44,10 +48,10 @@ src/test/java
 
 ```bash
 ./gradlew test          # прогон тестов → build/allure-results
-./gradlew allureReport  # отчёт   → build/reports/allure-report/index.html
+./gradlew allureReport  # отчёт   → build/reports/allure-report/allureReport/index.html
 ```
 
-Откройте `build/reports/allure-report/index.html` — там три теста с тремя разными деревьями шагов.
+Откройте `build/reports/allure-report/allureReport/index.html` — там три теста с тремя разными деревьями шагов (у плагина `io.qameta.allure` 4.x отчёт кладётся в подкаталог с именем задачи).
 
 ## Целевой объект проверки
 

@@ -53,6 +53,14 @@ src/test/java
 
 Откройте `build/reports/allure-report/allureReport/index.html` — там три теста с тремя разными деревьями шагов (у плагина `io.qameta.allure` 4.x отчёт кладётся в подкаталог с именем задачи).
 
+### Отчёт в действии
+
+Скриншот реального отчёта Allure после прогона трёх тестов (все — passed, 100%):
+
+![Allure Report — Overview](docs/allure-dashboard.png)
+
+> *Рис.* Главная страница сгенерированного отчёта: 3 test cases, 100%, сводка по suites и behaviors.
+
 ## Целевой объект проверки
 
 Тест проверяет наличие Issue с названием **`Test Issue`** на странице Issues публичного репозитория **`Electroniktm/allure-reports-selenide-github-issue`** (этот же). Браузер поднимается в облачном Selenoid (`selenoid.qa.guru`); версия Chrome не фиксируется.
